@@ -105,6 +105,7 @@ The forecast is robust: Random Forest, XGBoost, and SVM disagree on decimals but
 ## Future work
 
 - **Fantasy Premier League: luck or skill?** Done, and it got its own repo: [fpl-luck-or-skill](https://github.com/zakariae-boui/fpl-luck-or-skill). Measured on 24,041 real managers, FPL turns out to be 85% skill, the mirror image of this project's market-efficiency result: with no bookmaker pricing your decisions, skill persists and is measurable.
+- **The host's side of the story.** Also done: [wc2030-morocco-impact](https://github.com/zakariae-boui/wc2030-morocco-impact). This project forecasts who wins the 2026 World Cup; the companion asks what hosting the 2030 edition will do to Morocco. Panel econometrics finds no measurable GDP boost from hosting, and a PCA/MCA study of the six host cities maps where the congestion risk actually sits.
 - **More leagues.** The data pipeline is config-driven (`src/leagues.py`), so Serie A, Bundesliga, or Ligue 1 can be added with one config entry plus a team-name mapping; the steps are documented in `data/README.md`. More leagues means more training data and a test of whether the market-efficiency result holds outside England and Spain.
 - **Better draw modeling.** The draw is the hardest class for every model. Ordered classification or a Poisson goal model could give it a fairer chance than treating H/D/A as unordered labels.
 - **Live World Cup updates.** Re-running the Elo and the Monte Carlo after each knockout round to track how the title probabilities evolve as the real tournament unfolds.
