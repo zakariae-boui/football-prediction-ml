@@ -1,0 +1,18 @@
+# course material, not part of the published project
+presentation.pptx
+presentation_script.md
+
+# local tooling
+.claude/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

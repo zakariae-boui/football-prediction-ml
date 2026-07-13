@@ -1,0 +1,21 @@
+# Football ML project — Python dependencies
+# Install with:  pip install -r requirements.txt
+# (Python 3.10+ recommended)
+
+# --- core data & ML ---
+pandas
+numpy
+scikit-learn
+xgboost
+scipy
+
+# --- visualization ---
+matplotlib
+seaborn
+
+# --- data download scripts in src/ (already run; needed only to rebuild data) ---
+requests
+
+# --- to open and run the notebooks ---
+jupyter
+ipykernel
