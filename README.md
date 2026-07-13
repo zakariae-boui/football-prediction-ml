@@ -94,6 +94,13 @@ The forecast is robust: Random Forest, XGBoost, and SVM disagree on decimals but
   <img src="assets/model_agreement.png" width="850" alt="Title probability by model, the three models agree on the favorites">
 </p>
 
+## Future work
+
+- **Fantasy Premier League: luck or skill?** (in progress) A follow-up application that analyzes FPL manager performance and tries to separate skill from luck. It is the same question as Application A seen from the other side: if betting markets are efficient, how much of a fantasy manager's rank is actually repeatable skill?
+- **More leagues.** The data pipeline is config-driven (`src/leagues.py`), so Serie A, Bundesliga, or Ligue 1 can be added with one config entry plus a team-name mapping; the steps are documented in `data/README.md`. More leagues means more training data and a test of whether the market-efficiency result holds outside England and Spain.
+- **Better draw modeling.** The draw is the hardest class for every model. Ordered classification or a Poisson goal model could give it a fairer chance than treating H/D/A as unordered labels.
+- **Live World Cup updates.** Re-running the Elo and the Monte Carlo after each knockout round to track how the title probabilities evolve as the real tournament unfolds.
+
 ## Repository structure
 
 ```
