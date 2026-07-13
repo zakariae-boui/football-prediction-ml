@@ -80,6 +80,12 @@ The same three models are trained on the modern era (2002 onward, 17,588 matches
 
 For the knockout phase, a group table can use expected points, but a bracket needs a winner for every tie. So the bracket is simulated 20,000 times: each match is decided by a weighted coin flip using the model's win probability (draws resolved 50/50, like a shootout), and the winner advances until the final.
 
+The Round of 32 ties are already drawn, so the first knockout round can be shown head-to-head, each team's probability of advancing in its actual matchup:
+
+<p align="center">
+  <img src="assets/round_of_32.png" width="850" alt="Round of 32: each team's probability of advancing in its actual matchup">
+</p>
+
 | Team | Reach final | Win the cup |
 |---|---|---|
 | Argentina | 35.3% | **22.3%** |
