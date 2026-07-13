@@ -28,6 +28,8 @@ This project builds and compares three classifiers (Random Forest, XGBoost, SVM)
 
 The betting result is deliberately presented as it is: **no model beats the market**. Closing odds already price all public information, so a model built on public data can match the bookmaker's accuracy but cannot out-predict it. Getting a clean negative result required getting everything else right (no leakage, honest splits, de-vigged odds), which is the real point of the project.
 
+> **Sequel:** [value-betting-scanner](https://github.com/zakariae-boui/value-betting-scanner) takes this conclusion seriously and inverts the approach. If the sharp closing line cannot be out-predicted, use it as the truth and scan recreational bookmakers for prices that disagree with it. No prediction at all, and it worked: +4.0% average closing line value over 224 paper bets, the edge this project showed prediction alone cannot produce.
+
 ## Application A: can we beat the bookmaker?
 
 **Data.** 6,080 matches, Premier League + La Liga, 8 seasons (2018/19 to 2025/26), built from two sources merged on (date, home team, away team):
